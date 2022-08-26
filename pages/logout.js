@@ -1,5 +1,5 @@
-import React from "react";
-
+import {useEffect} from "react";
+import { useRouter } from "next/router";
 const Logout = () => {
   const { push } = useRouter();
   useEffect(() => {
