@@ -28,7 +28,7 @@ export const StateContext = ({ children }) => {
         let userLogged = user === null ? false : true;
 
         if (!userLogged) {
-          push("/login");
+          push("/");
         } else {
           setIsLogged(userLogged);
           setLoggedUser(user);
