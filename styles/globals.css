@@ -1,0 +1,392 @@
+.main-container {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+
+}
+
+.layout {
+  padding: 10px;
+}
+
+/* Estilos formulario Registro */
+.register-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.register-card {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding-bottom: 40px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+}
+
+.form-item {
+  margin: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.icons {
+  font-size: 25px;
+  color: rgb(39, 108, 164);
+}
+
+.title {
+  background: -webkit-linear-gradient(rgb(141, 208, 213), #276ca4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.register-card button {
+  border-radius: 10px;
+  background-color: #276ca4;
+  border-color: transparent;
+  color: white;
+  padding: 0px 10px 5px;
+  font-weight: 500;
+}
+
+.form-item input {
+  width: 250px;
+  z-index: 9;
+}
+
+.register-card span {
+  font-size: 1.2rem;
+  color: #484646;
+  font-weight: 500;
+}
+
+
+/* Estilos notificacion alerta */
+
+#snackbar {
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 100px;
+}
+
+.animation-in {
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.not-show {
+  display: none;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 100px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 100px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* Estilos navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 18px;
+  position: relative;
+  gap: 10px;
+}
+
+.navbar-link {
+  color: #484646;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  font-size: 35px;
+}
+
+.logout-text {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+}
+
+/* Estilo de las cards */
+
+.card {
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  margin: 10px 40px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border: none !important;
+
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1)
+}
+
+.card-icon {
+  border-radius: 20%;
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  padding: 40px;
+  background-color: #000;
+  box-shadow: 10px 10px 15px 10px rgba(59, 144, 172, 0.8);
+  transform: scale(1, 1);
+  display: flex;
+  align-items: center;
+}
+
+
+.card-name {
+  font-weight: 500;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.cards-category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+/* Estilos de slide images */
+.slides-container {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  box-shadow: 10px 10px 15px 10px #535151;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos movie cards */
+
+.cards-container {
+  display: flex;
+  color: rgb(228, 219, 219);
+  background: #eee;
+  padding: 0rem;
+  box-shadow: 0 0 1rem #000 inset;
+  overflow-x: auto;
+  position: relative;
+  height: 52vh;
+  background-color: #000;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.img-card {
+  flex: 1 0 300px;
+  box-shadow: 0 1px 1rem -4px #000;
+  background: #fff;
+  margin: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.img-card :hover {
+  box-shadow: 0 4px 1rem -4px #000;
+  transform: translateY(-3px);
+}
+
+.img-card img {
+  width: 290px;
+  height: 290px;
+  border-radius: 10%;
+  margin-top: 15px;
+}
+
+.popularity-card {
+  flex: 1 0 100%;
+  box-shadow: 0 1px 1rem -4px #000;
+  margin: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  background-size: cover;
+}
+
+.popularity-card span {
+  font-size: 3rem;
+  color: #0e0d0d;
+  text-align: right;
+  background-color: rgb(255, 255, 255, 0.5);
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+/*preview card css */
+.card-preview {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 350px;
+  display: flex;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-preview:hover {
+  box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.preview-container {
+  padding: 2px 16px;
+}
+
+.card-preview img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+/*Estilos contentDetails componente */
+.content-big-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content-details-container {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  width: 95%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15px 10px 20px 20px;
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.content-details-container img {
+  width: 95%;
+  height: 300px;
+}
+
+.content-desc {
+  margin: 0 20px 0 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+.content-desc p {
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 1.5rem;
+}
