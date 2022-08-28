@@ -38,7 +38,7 @@ function ContentCategory() {
 
   return (
     <div>
-      {movies && series ? (
+      {movies || series ? (
         <div>
           {movies?.length > 0 && (
             <SlideShow
