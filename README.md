@@ -4,7 +4,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 **Important: You must have all the needed keys configure in the .env file
 
-First, run the development server:
+First, install the dependencies
+```bash
+npm i
+```
+
+Second, run the development server:
 ```bash
 npm run dev
 # or
